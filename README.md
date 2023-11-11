@@ -13,7 +13,7 @@
 
 ###
 
-<h1 align="center">Hi Im JM 👋</h1>
+<h1 align="center">Yo I'm JM 👋</h1>
 
 ###
 
