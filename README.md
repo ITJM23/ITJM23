@@ -18,7 +18,7 @@
 
 ###
 
-<p align="left">I'm John Mark Tolentino from Batangas Philippines <br><br>- 🔭 I’m working as IT Programmer <br>- 📚 I'm currently learning Machine Learning <br>- ⚡ In my free time I go to the Gym</p>
+<p align="left">I'm John Mark Tolentino from Batangas Philippines <br><br>- 🔭 I’m working as IT Programmer <br>- 📚 I'm currently learning React and Angular I dont know too <br>- ⚡ In my free time I go to the Gym</p>
 
 ###
 
