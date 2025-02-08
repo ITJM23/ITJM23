@@ -31,6 +31,11 @@
     .header-text h1 {
       font-size: 3rem;
       margin-top: 15px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      transition: transform 0.3s ease-in-out;
+    }
+    .header-text h1:hover {
+      transform: scale(1.05);
     }
     .header-text p {
       font-size: 1.5rem;
@@ -60,6 +65,10 @@
       background: rgba(50, 50, 50, 0.8);
       border-radius: 12px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s;
+    }
+    .experience-item:hover {
+      transform: translateY(-5px);
     }
     .experience-item h3 {
       color: #ffcc00;
@@ -72,7 +81,7 @@
     }
     .skills-table {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
       gap: 10px;
       text-align: center;
     }
@@ -81,6 +90,10 @@
       background: rgba(255, 255, 255, 0.3);
       border-radius: 8px;
       font-weight: bold;
+      transition: background 0.3s ease-in-out;
+    }
+    .skills-table div:hover {
+      background: rgba(255, 255, 255, 0.5);
     }
     @media (max-width: 768px) {
       .content {
@@ -93,6 +106,15 @@
       .skills-table {
         grid-template-columns: 1fr;
       }
+    }
+    .social-links a {
+      color: white;
+      font-size: 1.5rem;
+      margin: 0 10px;
+      transition: color 0.3s;
+    }
+    .social-links a:hover {
+      color: #ffcc00;
     }
     .footer {
       text-align: center;
@@ -109,7 +131,7 @@
     </div>
     <div class="header-text"> 
       <h1>John Mark Tolentino</h1>
-      <p>Web Developer | Designer</p>
+      <p>IT Specialist | Programmer</p>
     </div>
   </header>
 
@@ -133,36 +155,32 @@
         <li>Managed plugins, updates, and technical troubleshooting.</li>
       </ul>
     </div>
-    <div class="experience-item">
-      <h3>Intern</h3>
-      <p>JPandB General Services Inc. (June 2020 – December 2020)</p>
-      <ul>
-        <li>Developed user-friendly web interfaces.</li>
-        <li>Integrated databases using PHP and MySQL.</li>
-        <li>Conducted extensive debugging and testing.</li>
-      </ul>
-    </div>
   </div>
 
   <div class="content" id="skills">
     <h2>My Skills</h2>
     <div class="skills-table">
-      <div>HTML & CSS</div>
-      <div>JavaScript</div>
-      <div>React.js</div>
-      <div>Node.js</div>
-      <div>UI/UX Design</div>
-      <div>PHP & MySQL</div>
-      <div>WordPress</div>
-      <div>Database Management</div>
-      <div>System Optimization</div>
+
+      <div>PHP, JavaScript ,Python, C#, HTML , CSS , Bootstrap</div>
+      <div>SQL Database Administration</div>
+      <div>power BI</div>
+      <div>Wordpress </div>
+      <div>website dev and administration</div>
+      <div>Git / Github</div>
+      <div>Ofice 365</div>
       <div>SEO Optimization</div>
+      <div>Hardware troubleshooting</div>
+      <div>Network devices conguration</div>
+      <div>Server Management </div>
+      <div>Powershell Automation</div>
+      <div>Lan cabling, CCTV , Printers, etc.</div>
+      <div>Anti Virus and Firewall Config</div>
     </div>
   </div>
 
   <div class="content" id="contact">
     <h2>Contact</h2>
-    <p>Email: <a href="mailto:johnmark@example.com" style="color: white;">johnmark@example.com</a></p>
+    <p>Email: <a href="mailto:tolentinojohnmark999@gmail.com" style="color: white;">tolentinojohnmark999@gmail.com</a></p>
     <div class="social-links">
       <a href="#" class="fab fa-linkedin"></a>
       <a href="#" class="fab fa-github"></a>
