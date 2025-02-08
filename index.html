@@ -4,85 +4,93 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>John Mark Tolentino</title>
-  <!-- External CSS from a CDN -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <style>
-    /* Basic styles for layout */
-    body {
-      font-family: Arial, sans-serif;
+    * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-      background-color: #f4f4f4;
     }
-
-    /* Header Section */
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #1e3c72, #2a5298);
+      color: #fff;
+      line-height: 1.6;
+      padding: 20px;
+    }
     header {
-      background-color: #333;
-      color: white;
-      padding: 20px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    /* Image slot */
-    .header-image {
-      width: 80px;
-      height: 80px;
-      border-radius: 50%;
-      overflow: hidden;
-    }
-
-    .header-image img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-
-    /* Name and title */
-    .header-text {
-      display: flex;
-      flex-direction: column;
-      text-align: right;
-    }
-
-    .header-text h1 {
-      margin: 0;
-    }
-
-    .header-text p {
-      margin: 0;
-      font-size: 0.9em;
-      color: #ccc;
-    }
-
-    /* Body Section */
-    .content {
-      padding: 20px;
-    }
-
-    .content h2 {
-      margin-top: 0;
-    }
-
-    .footer {
-      background-color: #333;
-      color: white;
       text-align: center;
-      padding: 10px;
-      position: fixed;
-      width: 100%;
-      bottom: 0;
+      padding: 40px 20px;
+    }
+    .header-image img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 4px solid white;
+    }
+    .header-text h1 {
+      font-size: 3rem;
+      margin-top: 15px;
+    }
+    .header-text p {
+      font-size: 1.5rem;
+      color: #ddd;
+    }
+    .content {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 25px;
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 15px;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+      backdrop-filter: blur(10px);
+    }
+    .content h2 {
+      font-size: 2.2rem;
+      margin-bottom: 20px;
+      color: #ffcc00;
+      text-align: center;
+    }
+    .experience-item {
+      margin-bottom: 25px;
+      padding: 20px;
+      background: rgba(255, 255, 255, 0.3);
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    .experience-item h3 {
+      color: #ffcc00;
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+    .experience-item p {
+      font-style: italic;
+      margin-bottom: 10px;
+    }
+    .skills-table {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      text-align: center;
+    }
+    .skills-table div {
+      padding: 12px;
+      background: rgba(255, 255, 255, 0.3);
+      border-radius: 8px;
+      font-weight: bold;
+    }
+    .footer {
+      text-align: center;
+      padding: 20px;
+      margin-top: 20px;
+      background: rgba(255, 255, 255, 0.2);
     }
   </style>
 </head>
 <body>
-
-  <!-- Header Section -->
   <header>
     <div class="header-image">
-      <img src="/pics/JMPIC.jpg" alt="Profile Image">
+      <img src="../ITJM23/pics/JMPIC.jpg" alt="John Mark Tolentino">
     </div>
     <div class="header-text"> 
       <h1>John Mark Tolentino</h1>
@@ -90,28 +98,64 @@
     </div>
   </header>
 
-  <!-- Body Section -->
-  <div class="content">
-    <h2>About Me</h2>
-    <p>Hello! I'm John Mark, a passionate web developer with a love for creating user-friendly and visually appealing websites. I specialize in front-end development, including HTML, CSS, JavaScript, and React. When I'm not coding, you can find me exploring new design trends or working on personal projects.</p>
-
-    <h2>My Skills</h2>
-    <ul>
-      <li>HTML, CSS, JavaScript</li>
-      <li>React.js</li>
-      <li>Node.js</li>
-      <li>UI/UX Design</li>
-      <li>Responsive Design</li>
-    </ul>
-
-    <h2>Contact</h2>
-    <p>Feel free to reach out to me via email at johnmark@example.com</p>
+  <div class="content" id="experience">
+    <h2>Work Experience</h2>
+    <div class="experience-item">
+      <h3>IT Specialist / Programmer</h3>
+      <p>TSUKIDEN ELECTRIC INDUSTRIES PHILIPPINES, INC. (June 2023 - Present)</p>
+      <ul>
+        <li>Developed and optimized in-house systems for better efficiency.</li>
+        <li>Performed database management, migrations, and upgrades.</li>
+        <li>Provided IT support and system troubleshooting.</li>
+      </ul>
+    </div>
+    <div class="experience-item">
+      <h3>Web Developer / Administrator</h3>
+      <p>MCC CONSULTING (May 2021 - February 2023)</p>
+      <ul>
+        <li>Designed and maintained responsive websites with WordPress.</li>
+        <li>Ensured security and performance optimizations.</li>
+        <li>Managed plugins, updates, and technical troubleshooting.</li>
+      </ul>
+    </div>
+    <div class="experience-item">
+      <h3>Intern</h3>
+      <p>JPandB General Services Inc. (June 2020 – December 2020)</p>
+      <ul>
+        <li>Developed user-friendly web interfaces.</li>
+        <li>Integrated databases using PHP and MySQL.</li>
+        <li>Conducted extensive debugging and testing.</li>
+      </ul>
+    </div>
   </div>
 
-  <!-- Footer -->
+  <div class="content" id="skills">
+    <h2>My Skills</h2>
+    <div class="skills-table">
+      <div>HTML & CSS</div>
+      <div>JavaScript</div>
+      <div>React.js</div>
+      <div>Node.js</div>
+      <div>UI/UX Design</div>
+      <div>PHP & MySQL</div>
+      <div>WordPress</div>
+      <div>Database Management</div>
+      <div>System Optimization</div>
+    </div>
+  </div>
+
+  <div class="content" id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:johnmark@example.com" style="color: white;">johnmark@example.com</a></p>
+    <div class="social-links">
+      <a href="#" class="fab fa-linkedin"></a>
+      <a href="#" class="fab fa-github"></a>
+      <a href="#" class="fas fa-envelope"></a>
+    </div>
+  </div>
+
   <div class="footer">
     <p>&copy; 2025 John Mark Tolentino</p>
   </div>
-
 </body>
 </html>
